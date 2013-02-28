@@ -1,3 +1,24 @@
+/*
+ * Ad container at top of message board index. Adblock removes the ad, but not
+ * the container.
+ */
 #adscon {
+  display: none;
+}
+
+/*
+ * The lack of anything approximating semantic markup means that this crazy
+ * selector is required to target the ad container on the right column of the
+ * message board index. This will probably break :/
+ */
+body > table:nth-of-type(0n+2) td:last-child {
+  display: none;
+}
+
+/*
+ * The footer at the bottom of the message board index. Just a bunch of text
+ * link ads.
+ */
+body > table:last-of-type {
   display: none;
 }
