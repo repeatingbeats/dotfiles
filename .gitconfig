@@ -1,0 +1,14 @@
+[user]
+	name = Steve Lloyd
+	email = steve@repeatingbeats.com
+
+[alias]
+    co = checkout
+    ci = commit
+    rb = rebase
+    st = status
+    d = diff
+    dc = diff --cached
+
+[core]
+    excludesfile = ~/.gitignore

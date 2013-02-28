@@ -1,0 +1,20 @@
+alias gco='git checkout'
+alias gci='git commit'
+alias grb='git rebase'
+alias gd='git diff'
+alias gdc='git diff --cached'
+alias gst='git status'
+alias gp='git push'
+alias gpl='git pull'
+
+alias sprunge='curl -F "sprunge=<-" http://sprunge.us | pbcopy'
+alias uuid="uuidgen | tr 'A-Z' 'a-z' | pbcopy"
+alias svndiff="svn diff --diff-cmd=diff -x '-U8 -p;"
+
+alias pgstart="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start"
+alias pgstop="pg_ctl -D /usr/local/var/postgres stop -s -m fast"
+
+alias rdstart="redis-server /usr/local/etc/redis.conf"
+
+alias nt='nametab'
+alias nr='repl.history'

@@ -1,0 +1,15 @@
+[submodule ".vim/bundle/ultisnips"]
+	path = .vim/bundle/ultisnips
+	url = git@github.com:SirVer/ultisnips
+[submodule ".vim/bundle/snipmate-snippets"]
+	path = .vim/bundle/snipmate-snippets
+	url = git@github.com:honza/snipmate-snippets
+[submodule ".vim/bundle/nerdtree"]
+	path = .vim/bundle/nerdtree
+	url = git@github.com:scrooloose/nerdtree
+[submodule ".scripts/nvm"]
+	path = .scripts/nvm
+	url = git@github.com:creationix/nvm
+[submodule ".scripts/z"]
+	path = .scripts/z
+	url = git@github.com:rupa/z
