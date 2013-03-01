@@ -28,3 +28,4 @@ unset file
 
 [[ -r $NVM_DIR/bash_completion ]] && . $NVM_DIR/bash_completion
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+[ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh
