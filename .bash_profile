@@ -13,7 +13,6 @@ export PS1='\[\e[1;32m\]➜ \W\[\e[0m\]\[\e[1;33m\]$(__git_ps1 "#%s")\[\e[0m\] '
 
 source ~/.scripts/.git-completion.sh
 source ~/.scripts/z/z.sh
-source ~/.scripts/nvm/nvm.sh
 
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
@@ -28,4 +27,6 @@ unset file
 
 [[ -r $NVM_DIR/bash_completion ]] && . $NVM_DIR/bash_completion
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+
 [ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh
+source /opt/boxen/nvm/nvm.sh
