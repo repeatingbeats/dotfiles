@@ -1,3 +1,17 @@
+body {
+  background-color: #FFF !important;
+  max-width: 1080px !important;
+  margin: 0 auto !important;
+}
+
+table {
+  border-spacing: 0px;
+}
+
+.tholder > table {
+  margin: 0 4px 12px 4px;
+}
+
 /*
  * Ad container at top of message board index. Adblock removes the ad, but not
  * the container.
@@ -11,7 +25,7 @@
  * selector is required to target the ad container on the right column of the
  * message board index. This will probably break :/
  */
-body > table:nth-of-type(0n+2) td:last-child {
+body > table:nth-of-type(0n+2) > tbody > tr > td:last-child {
   display: none;
 }
 
@@ -21,4 +35,36 @@ body > table:nth-of-type(0n+2) td:last-child {
  */
 body > table:last-of-type {
   display: none;
+}
+
+.BaseFont {
+  font-family: Helvetica Neue, Helvetica, sans-serif;
+  font-size: 1.2em;
+  line-height: 1.1;
+  color: #222;
+}
+
+.SmallFont {
+  font-family: Helvetica Neue, Helvetica, sans-serif;
+  font-size: 1.2em;
+}
+
+.ForumTable1, .ForumTable2, .ForumHeader {
+  padding: 8px;
+}
+
+.ForumTable2 > font > div {
+  max-width: 800px;
+}
+
+.ForumHeader {
+  background-color: #BBB;
+}
+
+.ForumTable1 {
+  background-color: #D8D8D8;
+}
+
+.ForumTable2 {
+  background-color: #EEE;
 }
