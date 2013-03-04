@@ -63,7 +63,7 @@ let g:UltiSnipsSnippetDirectories=[ 'UltiSnips', 'my-snippets' ]
 autocmd vimenter * NERDTree
 " Cursor goes to main window if we open a file, NERDTree window otherwise
 autocmd vimenter * if argc() | wincmd p | endif
-" Close vim if NERDTree is th eonly window left open
+" Close vim if NERDTree is the only window left open
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 hi Comment ctermfg=gray
 hi Comment cterm=none
