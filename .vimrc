@@ -59,8 +59,11 @@ set listchars=tab:▸\ ,eol:¬
 
 let g:UltiSnipsSnippetDirectories=[ 'UltiSnips', 'my-snippets' ]
 
+" Always open NERDTree
 autocmd vimenter * NERDTree
+" Cursor goes to main window if we open a file, NERDTree window otherwise
+autocmd vimenter * if argc() | wincmd p | endif
+" Close vim if NERDTree is th eonly window left open
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 hi Comment ctermfg=gray
 hi Comment cterm=none
-
