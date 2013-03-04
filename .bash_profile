@@ -29,4 +29,4 @@ unset file
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
 [ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh
-source /opt/boxen/nvm/nvm.sh
+[ -f /opt/boxen/nvm/nvm.sh ] && source /opt/boxen/nvm/nvm.sh
