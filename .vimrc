@@ -26,7 +26,7 @@ au BufNewFile,BufRead *.less set filetype=less
 au BufNewFile,BufRead *.less.jst set filetype=less
 au BufNewFile,BufRead *.snippets set filetype=snippets
 
-au FileType snippets setlocal ts=4 sts=4 sw=4 noexpandtab
+"au FileType snippets setlocal ts=4 sts=4 sw=4 noexpandtab
 
 " highlight trailing whitespace, except while typing
 au ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
@@ -58,6 +58,8 @@ colorscheme solarized
 nmap <leader>l :set list!<CR>
 " use textmate hidden character symbols
 set listchars=tab:▸\ ,eol:¬
+
+let g:UltiSnipsSnippetDirectories=[ 'UltiSnips', 'my-snippets' ]
 
 autocmd vimenter * NERDTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
