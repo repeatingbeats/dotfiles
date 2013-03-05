@@ -52,6 +52,8 @@ set background=dark
 let g:solarized_visibility = "high"
 colorscheme solarized
 
+highlight SignColumn guibg=darkgrey
+
 " toggle hidden characters with \l
 nmap <leader>l :set list!<CR>
 " use textmate hidden character symbols
