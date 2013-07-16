@@ -52,7 +52,8 @@ set background=dark
 let g:solarized_visibility = "high"
 colorscheme solarized
 
-highlight SignColumn guibg=darkgrey
+au vimenter * highlight clear SignColumn
+au vimenter * hi! link SignColumn LineNr
 
 " toggle hidden characters with \l
 nmap <leader>l :set list!<CR>
