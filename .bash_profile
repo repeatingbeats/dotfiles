@@ -1,5 +1,3 @@
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-
 export PATH="$HOME/bin:$PATH"
 export PATH=~/.scripts:$PATH
 export PATH=/usr/local/bin:$PATH
@@ -22,11 +20,12 @@ for file in ~/.{aliases,path,extra}; do
 done
 unset file
 
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
 # If possible, add tab completion for many more commands
 [ -f /etc/bash_completion ] && source /etc/bash_completion
 
 [[ -r $NVM_DIR/bash_completion ]] && . $NVM_DIR/bash_completion
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
 [ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh
 [ -f /opt/boxen/nvm/nvm.sh ] && source /opt/boxen/nvm/nvm.sh
