@@ -2,6 +2,7 @@ call pathogen#infect()
 
 syntax on
 filetype on
+filetype plugin indent on
 
 set softtabstop=2
 set shiftwidth=2
