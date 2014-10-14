@@ -4,7 +4,9 @@ export PATH=/usr/local/bin:$PATH
 export PATH=$HOME/local/node/bin:$PATH
 export PATH=/usr/local/git:$PATH
 export PATH=/usr/local/git/bin:$PATH
+export PATH="$HOME/.rbenv/bin:$PATH"
 export PATH="/usr/local/heroku/bin:$PATH"
+export PATH="$(brew --prefix mysql55)/bin:$PATH"
 export EDITOR=vim
 
 export PS1='\[\e[1;32m\]➜ \W\[\e[0m\]\[\e[1;33m\]$(__git_ps1 "#%s")\[\e[0m\] '

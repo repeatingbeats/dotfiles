@@ -71,3 +71,10 @@ autocmd vimenter * if argc() | wincmd p | endif
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 hi Comment ctermfg=gray
 hi Comment cterm=none
+
+" Use <c-t> for ctrlp since I'm used to it
+let g:ctrlp_map = '<c-t>'
+" ctrlp at top of window
+let g:ctrlp_match_window_bottom = 0
+" ctrlp results sorted top to bottom
+let g:ctrlp_match_window_reversed = 0
