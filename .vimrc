@@ -1,4 +1,11 @@
-call pathogen#infect()
+""" TODO pathogen
+"call pathogen#infect()
+
+call plug#begin()
+Plug 'preservim/nerdtree'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'airblade/vim-gitgutter'
+call plug#end()
 
 syntax on
 filetype on
@@ -27,10 +34,11 @@ au BufNewFile,BufRead *.less set filetype=less
 au BufNewFile,BufRead *.less.jst set filetype=less
 au BufNewFile,BufRead *.snippets set filetype=snippets
 
+""" TODO is this related to colorscheme?
 " highlight trailing whitespace, except while typing
-au ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
-au InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
-au InsertLeave * match ExtraWhitespace /\s\+$/
+" au ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
+" au InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
+" au InsertLeave * match ExtraWhitespace /\s\+$/
 
 set number
 set cc=81
@@ -50,8 +58,9 @@ set wildmode=list:longest " Complete only until point of ambiguity.
 
 syntax enable
 set background=dark
-let g:solarized_visibility = "high"
-colorscheme solarized
+""" TODO get solarized working
+" let g:solarized_visibility = "high"
+" colorscheme solarized
 
 au vimenter * highlight clear SignColumn
 au vimenter * hi! link SignColumn LineNr
@@ -61,7 +70,8 @@ nmap <leader>l :set list!<CR>
 " use textmate hidden character symbols
 set listchars=tab:▸\ ,eol:¬
 
-let g:UltiSnipsSnippetDirectories=[ 'UltiSnips', 'my-snippets' ]
+""" TODO re-install UntiSnips
+"let g:UltiSnipsSnippetDirectories=[ 'UltiSnips', 'my-snippets' ]
 
 " Always open NERDTree
 autocmd vimenter * NERDTree
@@ -69,5 +79,8 @@ autocmd vimenter * NERDTree
 autocmd vimenter * if argc() | wincmd p | endif
 " Close vim if NERDTree is the only window left open
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+" Show dotfiles in NERDTree
+let NERDTreeShowHidden=1
+
 hi Comment ctermfg=gray
 hi Comment cterm=none
