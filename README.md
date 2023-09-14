@@ -9,14 +9,17 @@ This is mostly to remind myself.
 ```bash
 ➜ cd ~/code
 ➜ git clone git@github.com:repeatingbeats/dotfiles
-➜ git submodule update --init
 # warning! destructive
 ➜ ./bootstrap.sh
 ```
 
 ## environment setup
 
-### iTerm
+1. Install homebrew
+2. Install rbenv and ruby latest
+3. Install nvm and node latest
+
+## iTerm
 
 1. Copy com.googlecode.iterm2 from Dropbox into ~/Library/Preferences
 1. Use the `slloyd-3` profile in Preferences
