@@ -13,3 +13,11 @@ This is mostly to remind myself.
 # warning! destructive
 ➜ ./bootstrap.sh
 ```
+
+## environment setup
+
+### iTerm
+
+1. Copy com.googlecode.iterm2 from Dropbox into ~/Library/Preferences
+1. Use the `slloyd-3` profile in Preferences
+1. Download [Source Code Pro](https://github.com/adobe-fonts/source-code-pro/releases/tag/2.030R-ro%2F1.050R-it), install font, and update text Preferences for `slloyd-3` profile.
